@@ -37,7 +37,6 @@ cr.mailings().get(1234567).then(function(mailing) {
 
 // Create new mailing
 var newMailing = {
-	'method': 'POST',
 	'mailingData': {
 		'name': 'This is the title',
 		'type': 'html/text',
