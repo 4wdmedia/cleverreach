@@ -1,7 +1,7 @@
 {
   "name": "cleverreach",
-  "version": "0.1.0",
-  "description": "Low level API for the CleverReach API",
+  "version": "0.2.0",
+  "description": "Promise based npm module for using CleverReach API",
   "main": "index.js",
   "keywords": [
     "api",
@@ -9,11 +9,16 @@
     "mailing",
     "newsletter"
   ],
-  "author": "Michel Gotta <michel.gotta@4wdmedia.de> (http://www.4wdmedia.de)",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/michelgotta/cleverreach"
+  },
+  "author": "Michel Gotta <michel.gotta@4wdmedia.de> (http://github.com/michelgotta)",
+  "license": "MIT",
   "dependencies": {
+    "deep-extend": "^0.4.1",
     "query-string": "^4.2.3",
-    "request": "^2.76.0",
+    "request": "^2.77.0",
     "request-promise": "^4.1.1"
   }
 }

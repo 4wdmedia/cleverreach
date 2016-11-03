@@ -1,6 +1,6 @@
 # cleverreach
 
-> npm module for using CleverReach API
+> Promise based npm module for using CleverReach API
 
 ---
 
@@ -14,26 +14,26 @@ $ npm install --save cleverreach
 ## Usage
 
 ```js
-var CleverReachApi = require('cleverreach');
+var CleverReach = require('cleverreach');
 
-var keys = {
-	'client_id': '123456',
-	'login': 'john.doe@foo.bar',
-	'password': 'abc123'
-};
-
-var CleverReach = new CleverReachApi(keys);
+// Login credentials
+var cr = new CleverReach({
+	client_id: '123456',
+	login: 'john.doe@foo.bar',
+	password: 'abc123'
+});
 
 // Get all mailings
-CleverReach.mailings({'limit': 25}, function(error, response, body) {
-	console.log(response);
+cr.mailings().getAll().then(function(mailings) {
+	console.log(mailings);
 });
 
-
-// Get mailing with specific ID
-CleverReach.mailings({'id': 10253173}, function(error, response, body) {
-	console.log(response);
-});
+// Get single mailing with specified ID
+cr.mailings().get(1234567).then(function(mailing) {
+	console.log(mailing);
+}).catch(function(error) {
+	console.log(error);
+})
 
 // Create new mailing
 var newMailing = {
@@ -50,18 +50,25 @@ var newMailing = {
 	}
 };
 
-CleverReach.mailings(newMailingParams, function(error, response, body) {
-	console.log(response);
+cr.mailings().create(newMailing).then(function(mailing) {
+	console.log(mailing)
 });
 ```
 
 
 ## API
 
-### .mailings()
+### Mailings
 
-
-
+#### .mailings().getAll(data)
+#### .mailings().get(id)
+#### .mailings().getLinks(id)
+#### .mailings().getOrders(id)
+#### .mailings().create()
+#### .mailings().update(id, data)
+#### .mailings().getChannels()
+#### .mailings().getChannel(id)
+#### .mailings().removeChannel(id)
 
 ## License
 
