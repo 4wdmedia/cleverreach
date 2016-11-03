@@ -1,6 +1,6 @@
 # cleverreach
 
-> Low level API for the CleverReach API
+> npm module for using CleverReach API
 
 ---
 
