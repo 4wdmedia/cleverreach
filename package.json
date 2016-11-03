@@ -1,0 +1,19 @@
+{
+  "name": "cleverreach",
+  "version": "0.1.0",
+  "description": "Low level API for the CleverReach API",
+  "main": "index.js",
+  "keywords": [
+    "api",
+    "cleverreach",
+    "mailing",
+    "newsletter"
+  ],
+  "author": "Michel Gotta <michel.gotta@4wdmedia.de> (http://www.4wdmedia.de)",
+  "license": "ISC",
+  "dependencies": {
+    "query-string": "^4.2.3",
+    "request": "^2.76.0",
+    "request-promise": "^4.1.1"
+  }
+}
