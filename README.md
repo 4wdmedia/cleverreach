@@ -1,6 +1,6 @@
 # cleverreach
 
-> Promise based npm module for using CleverReach API
+> Promise based npm module for using [CleverReach REST API](https://rest.cleverreach.com/explorer/)
 
 ---
 
@@ -57,18 +57,26 @@ cr.mailings().create(newMailing).then(function(mailing) {
 
 ## API
 
+You find detailed infos about the CleverReach REST API [here](https://rest.cleverreach.com/explorer/)
+
+Here is a list of all implemented functions:
+
 ### Mailings
 
 #### .mailings().getAll(data)
 #### .mailings().get(id)
 #### .mailings().getLinks(id)
 #### .mailings().getOrders(id)
-#### .mailings().create()
+#### .mailings().create(data)
 #### .mailings().update(id, data)
 #### .mailings().getChannels()
 #### .mailings().getChannel(id)
-#### .mailings().removeChannel(id)
+#### .mailings().deleteChannel(id)
 
-## License
+### Reports
 
-TODO: Add license informations…
+#### .reports().getAll(data)
+#### .reports().get(id, data)
+#### .reports().getOrders(id)
+#### .reports().getReceivers(id, data)
+#### .reports().getStats(id, data)

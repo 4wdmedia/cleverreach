@@ -50,7 +50,7 @@ module.exports = function() {
 				uri: cleverreach.url + 'mailings/channel.json/' + id
 			});
 		},
-		removeChannel: function(id) {
+		deleteChannel: function(id) {
 			return crRequest(cleverreach, {
 				method: 'DELETE',
 				uri: cleverreach.url + 'mailings/channel.json/' + id
