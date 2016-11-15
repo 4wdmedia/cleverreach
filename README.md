@@ -61,6 +61,21 @@ You find detailed infos about the CleverReach REST API [here](https://rest.cleve
 
 Here is a list of all implemented functions:
 
+### Receivers
+
+#### .receivers().get(id, data)
+#### .receivers().getEvents(id, data)
+#### .receivers().getOrders(id, data)
+#### .receivers().getAttributes(id, data)
+
+### Reports
+
+#### .reports().getAll(data)
+#### .reports().get(id, data)
+#### .reports().getOrders(id)
+#### .reports().getReceivers(id, data)
+#### .reports().getStats(id, data)
+
 ### Mailings
 
 #### .mailings().getAll(data)
@@ -72,11 +87,3 @@ Here is a list of all implemented functions:
 #### .mailings().getChannels()
 #### .mailings().getChannel(id)
 #### .mailings().deleteChannel(id)
-
-### Reports
-
-#### .reports().getAll(data)
-#### .reports().get(id, data)
-#### .reports().getOrders(id)
-#### .reports().getReceivers(id, data)
-#### .reports().getStats(id, data)

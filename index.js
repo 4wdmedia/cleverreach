@@ -20,6 +20,6 @@ var CleverReach = module.exports = function(keys) {
 // CleverReach.prototype.groups = require('./src/groups');
 // CleverReach.prototype.forms = require('./src/forms');
 // CleverReach.prototype.attributes = require('./src/attributes');
-// CleverReach.prototype.receivers = require('./src/receivers');
+CleverReach.prototype.receivers = require('./src/receivers');
 CleverReach.prototype.reports = require('./src/reports');
 CleverReach.prototype.mailings = require('./src/mailings');

@@ -1,6 +1,6 @@
 {
   "name": "cleverreach",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Promise based npm module for using CleverReach API",
   "main": "index.js",
   "keywords": [
