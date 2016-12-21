@@ -4,17 +4,17 @@ var queryString    = require('query-string');
 module.exports = function() {
 	var cleverreach = this;
 	return {
-		getAll: function(data) {           // return list of groups
+		getAll: function(data) {
 			return crRequest(cleverreach, {
 				uri: cleverreach.url + 'groups.json?' + queryString.stringify(data)
 			});
 		},
-		get: function(id) {                // return a single group
+		get: function(id) {
 			return crRequest(cleverreach, {
 				uri: cleverreach.url + 'groups.json/' + id
 			});
 		},
-		createReceiver: function(id, data) {       // add receiver to mailing list
+		createReceiver: function(id, data) {
 			return crRequest(cleverreach, {
 				method: 'POST',
 				uri: cleverreach.url + 'groups.json/' + id + '/receivers',
@@ -22,7 +22,7 @@ module.exports = function() {
 				json: true
 			});
 		},
-		deleteGroup: function(id) {         // delete group
+		deleteGroup: function(id) {
 			return crRequest(cleverreach, {
 				method: 'DELETE',
 				uri: cleverreach.url + 'groups.json/' + id

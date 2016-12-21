@@ -61,6 +61,13 @@ You find detailed infos about the CleverReach REST API [here](https://rest.cleve
 
 Here is a list of all implemented functions:
 
+### Groups
+
+#### groups().getAll(data)
+#### groups().get(id)
+#### groups().createReceiver(id, data)
+#### groups().deleteGroup(id)
+
 ### Receivers
 
 #### .receivers().get(id, data)

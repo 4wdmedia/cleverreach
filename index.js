@@ -9,7 +9,6 @@ var CleverReach = module.exports = function(keys) {
 			body: keys,
 			json: true
 		});
-
 		return promise;
 	}
 };
