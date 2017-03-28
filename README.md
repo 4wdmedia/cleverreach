@@ -65,6 +65,7 @@ Here is a list of all implemented functions:
 
 #### groups().getAll(data)
 #### groups().get(id)
+#### groups().create(name)
 #### groups().createReceiver(id, data)
 #### groups().deleteGroup(id)
 

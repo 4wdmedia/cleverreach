@@ -14,6 +14,16 @@ module.exports = function() {
 				uri: cleverreach.url + 'groups.json/' + id
 			});
 		},
+		create: function(name) {
+			return crRequest(cleverreach, {
+				method: 'POST',
+				uri: cleverreach.url + 'groups.json',
+				body: {
+					name: name
+				},
+				json: true
+			});
+		},
 		createReceiver: function(id, data) {
 			return crRequest(cleverreach, {
 				method: 'POST',
