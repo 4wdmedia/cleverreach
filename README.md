@@ -63,11 +63,25 @@ Here is a list of all implemented functions:
 
 ### Groups
 
-#### groups().getAll(data)
-#### groups().get(id)
-#### groups().create(name)
-#### groups().createReceiver(id, data)
-#### groups().deleteGroup(id)
+#### .groups().getAll(data)
+#### .groups().getAttributes(id)
+#### .groups().getBlacklist(id)
+#### .groups().getFilters(id)
+#### .groups().getFilter(id, filterId)
+#### .groups().getFilterReceivers(id, filterId)
+#### .groups().getFilterStats(id, filterId)
+#### .groups().getReceivers(id)
+#### .groups().getReceiver(id, receiverId)
+#### .groups().getReceiverEvents(id, receiverId)
+#### .groups().getReceiverOrders(id, receiverId)
+#### .groups().getReceiverAttributes(id, poolId)
+#### .groups().get(id)
+#### .groups().getAdvancedStats(id)
+#### .groups().getForms(id)
+#### .groups().getStats(id)
+#### .groups().create(name)
+#### .groups().createReceiver(id, data)
+#### .groups().delete(id)
 
 ### Receivers
 

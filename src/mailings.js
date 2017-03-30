@@ -55,6 +55,12 @@ module.exports = function() {
 				method: 'DELETE',
 				uri: cleverreach.url + 'mailings/channel.json/' + id
 			});
+		},
+		delete: function(id) {
+			return crRequest(cleverreach, {
+				method: 'DELETE',
+				uri: cleverreach.url + 'mailings.json/' + id
+			});
 		}
 	};
 };
